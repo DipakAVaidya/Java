@@ -1,0 +1,38 @@
+import java.lang.*;
+import java.util.*;
+
+public class ReadKeyboard
+{ 
+      public static void main(String arg[])
+        {
+            Scanner sc=new Scanner(System.in); 
+            int a,b,c;
+            String Name;
+            float x,y,z;
+            System.out.println("May I Know your Name " );
+            Name = sc.next();
+            System.out.println("Welcome miss/mr " + Name);
+
+            System.out.println("Do You Want to perform any mathematical opration");
+            
+
+            System.out.println("Enter A 2 number:  ");
+            a = sc.nextInt();
+            b = sc.nextInt();
+            c = a+b;
+            System.out.println("Sum Is " + c);
+
+            System.out.println("Enter A 2 number:  ");
+            x = sc.nextFloat();
+            y = sc.nextFloat();
+            z = x/y;
+            System.out.println("Divison Is " + z);
+
+            System.out.println("Enter A Binary number: "); 
+            sc.useRadix(2);
+            int u=sc.nextInt();
+            System.out.println("Binary to Decimal Is: " + u);
+            
+            
+          }
+}
