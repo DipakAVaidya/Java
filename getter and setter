@@ -1,0 +1,79 @@
+
+import java.time.LocalDate;
+import java.time.Period;
+
+public class car {
+	private String name;
+	
+	
+
+	public String getName() {
+		return name;
+	}
+
+   void setName(String name) {
+		this.name = name;
+	}
+	
+	private int speed;
+	
+
+
+
+	public int getSpeed() {
+		return speed;
+	}
+
+
+
+	public void setSpeed(int newSpeed) {
+		speed = newSpeed;
+	}
+	
+	private int gasoline;
+	private boolean engineState;
+	
+	private LocalDate manufactured;
+
+
+
+	public LocalDate getManufactured() {
+		return manufactured;
+	}
+
+
+
+	public void setManufactured(LocalDate manufactured) {
+		this.manufactured = manufactured;
+	}
+	
+	public int getAge() {
+		return Period.between(getManufactured(),LocalDate.now()).getYears();
+		
+	}
+
+	public static void main(String[] args) {
+		car car54 = new car();
+		
+		car54.setName("car 54");
+		car54.setSpeed(20);
+		car54.setManufactured(LocalDate.of(1999, 3, 23));
+		
+		car mach5 = new car();
+		
+		mach5.setName("mach V");
+		mach5.setSpeed(250);
+		mach5.setManufactured(LocalDate.of(1999, 8, 29));
+		
+		for(car car: new car[] {car54,mach5}) {
+			System.out.println(car.getName()+ "  is " + car.getAge() +"years old and is traveling at "+ car.getSpeed() +" mph%n" );
+		}
+		
+		
+		
+		
+		
+
+	}
+
+}
