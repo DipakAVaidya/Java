@@ -67,6 +67,9 @@ public class car {
 		
 		for(car car: new car[] {car54,mach5}) {
 			System.out.println(car.getName()+ "  is " + car.getAge() +"years old and is traveling at "+ car.getSpeed() +" mph%n" );
+			// here is another way to write print statment
+			
+		       //   System.out.printf("%s is %d years old and  traveling at %d mph%n",car.getName(),car.getAge(),car.getSpeed());
 		}
 		
 		
