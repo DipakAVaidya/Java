@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class ArmstrongNumber{
+     
+      public ststic void main(String[] args){
+            
+            Scanner sc=new Scanner (System.in);
+            int n =sc.nextInt(); // enter a value
+            
+            int sum = 0 , r;
+            int m = n;
+            while(n>0){
+                 r = n % 10; // seprating the digits 
+                 sum =sum+r*r*r; // cube of all digit
+                 n = n / 10; // eleminate last digit
+            }
+            System.out.println(sum);
+            
+            if(sum==m) // cheak if given number same or not 
+               System.out.println(" This Is A Armstron Number");
+            else    
+               System.out.println(" This Is Not A Armstron Number");
+      
+      }
+}
