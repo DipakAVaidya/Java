@@ -1,0 +1,96 @@
+import java.util.Scanner;
+
+public class IfElseChallenge {
+    public static void main(String[] args) {
+        int n;
+        Scanner sc=new Scanner (System.in);
+        System.out.println("Enter a Number ");
+        n=sc.nextInt();
+        // Number Even Or Odd
+        if (n%2==0){
+            System.out.println("Number is Even");
+        }
+        else{
+            System.out.println("Number is Odd");
+        }
+
+
+       1 // The person is young or old
+
+     int i ;
+     System.out.println("\nEnter a Persons Age");
+     i=sc.nextInt();
+   
+     if (i>35) {
+        System.out.println("Person is Old");
+     }
+     else if(i<10){
+        System.out.println("Person is Child");
+     }
+     else{
+        System.out.println("Person is young");
+     }
+
+    2  // Find THe Grades Of given  Marks
+
+     int m1,m2,m3;
+     System.out.println("Enter a Subject 1 Marks");
+     m1 = sc.nextInt();
+     System.out.println("Enter a Subject 2 Marks");
+     m2 = sc.nextInt();
+     System.out.println("Enter a Subject 3 Marks");
+     m3 = sc.nextInt();
+     
+     int total = m1+m2+m3;
+     int avg = total/3;
+     if (avg>75) {
+        System.out.println("A");
+     }
+     else if (avg<74&&avg>60) {
+        System.out.println("B");
+     }
+     else if (avg<59&&avg>35) {
+        System.out.println("C");
+     }
+     else{
+        System.out.println("Your avr Mark Is: "+ avg);
+        System.out.println("FAIL");
+     }
+
+
+
+   3  // Display Numbers of day based on a Number:
+
+     int daynum;
+     System.out.println("Enter any day number  in week");
+     daynum = sc.nextInt();
+
+     if (daynum==1) {
+        System.out.println("MONDAY");
+     }
+     else if (daynum==2) {
+      System.out.println("TUESDAY");
+     }
+     else if (daynum==3) {
+      System.out.println("WEDNESSDAY");
+     }
+     else if (daynum==4) {
+      System.out.println("THURSDAY");
+     }
+     else if (daynum==5) {
+      System.out.println("FRIDAY");
+     }
+     else if (daynum==6) {
+      System.out.println("SATURDAY");
+     }
+     else if (daynum==7) {
+      System.out.println("SUNDAY");
+     }
+     else{
+      System.out.println("THIS NOT A VALID DAY NUMBER");
+     }
+
+
+
+    }
+}
