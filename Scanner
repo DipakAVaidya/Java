@@ -36,3 +36,41 @@ public class ReadKeyboard
             
           }
 }
+
+
+// Arithmatic Operations
+public class Arithmatic {
+    public static void main(String[] args) {
+        int a = 12, b = 5;
+        int c = a + b;
+        int r = a % b;
+        float F = (float) a / b;
+        System.out.println(c);
+        System.out.println(r);
+        System.out.println(F);
+
+        float  g= 25.3f, d = 6.6f;
+        long l =  123l;
+        float e = g % d;
+        float z = (float)l / d;
+        System.out.println(e);
+        System.out.println(z);
+
+        byte h = 10;
+        short j = 13;
+        char C = 40;
+
+        // during the operation byte and short are converted into int its called coresion
+
+        int k = j * h;
+        int x = C + j;
+        System.out.println(k);
+        System.out.println(x);
+
+        System.out.println();
+        System.out.println(10/(2*5));
+
+
+
+    }
+}
