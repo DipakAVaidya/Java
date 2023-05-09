@@ -1,0 +1,47 @@
+public class MachingSymbolRE {
+    public static void main(String[] args) {
+        /*  String str1 = "f";
+            System.out.println(str1.matches("."));
+    
+        String str1 = "a";
+        System.out.println(str1.matches("[abc]"));
+        
+        String str1 = "z";
+        System.out.println(str1.matches("[^abc]"));
+       
+        String str1 = "A";
+        System.out.println(str1.matches("[a-b0-9]"));
+        
+
+        String str1 = "A";
+        System.out.println(str1.matches("A|B"));
+       
+        
+        String str1 = "abc";
+        System.out.println(str1.matches("abc"));
+         
+
+         // META CHARACTERS
+         String str1 = "abc";
+        System.out.println(str1.matches("//w"));//any alphabet or digit and its must be single
+       
+        String str1 = "$";
+        System.out.println(str1.matches("\\D"));//not a digit
+         
+        String str1 = "$";
+        System.out.println(str1.matches("\\W"));//not a digit nor Alphabet
+       */
+      String str1 = "abcd";
+      System.out.println(str1.matches(".*"));//any no of times
+      System.out.println(str1.matches("[a-z]*"));
+      System.out.println(str1.matches("[a-z]+"));
+      System.out.println(str1.matches("[a-z]{5}"));
+
+      String str2 = "john@gmail.com";
+      System.out.println(str2.matches(".*gmail.*"));
+      System.out.println(str2.matches("\\w*@gmail(.*)"));
+
+    } 
+    
+    
+}
