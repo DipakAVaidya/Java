@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Palimdromn {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" Enter a Number: ");
+
+        int n = sc.nextInt();
+        int m = n, rev = 0;
+        while (n > 0) {
+            int r = n % 10;
+            rev = rev * 10 + r;
+            n = n / 10;
+
+        }
+        System.out.println("\nsee The Reverse no is mach or not to Given no: " + rev);
+        if (rev == m) {
+            System.out.println("\nThis is Palimdrom Number: \n");
+        } else
+            System.out.println("\n Not a Palimdrom Number: \n");
+
+    }
+}
