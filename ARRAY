@@ -1,1 +1,53 @@
+// 2D Array Basics
+public class ArrayDemo {
+    public static void main(String[] args) {
+        int[][] a = {{10,20,30,40},{50,60},{70,80,90} };
+        System.out.println(a); // shows array garbege adress with two bracess 2d
+        System.out.println(a[0]);// shows array garbege adress with one bracess 1d
+        System.out.println(a[0][0]); // show first element in array 
+        System.out.println(a.length); // shows parent array lenght 
+        System.out.println(a[0].length); // shows zeroth no array length
+        // System.out.println(a[0][0].lenght); // shows error
+
+        // Printin full Array
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a[i].length; j++) {
+                System.out.print(a[i][j]+" ,");
+                
+            }
+           
+            System.out.println(""); 
+        }
+       
+    }
+
+}
+
+
+
+// 3D Array Basics
+public class ArrayDemo3d {
+    public static void main(String[] args) {
+        int[][][] a =new int [2][3][2];
+        System.out.println(a);
+        System.out.println(a[0]);
+        System.out.println(a[0][0]);
+        System.out.println(a[0][1]);
+        System.out.println(a.length);
+        System.out.println(a[0].length);
+        System.out.println(a[0][1].length);
+        System.out.println();
+
+
+        int[][][] A = {{{10,20,30},{40,50,60,},{70,80,90}}};
+        for (int i = 0; i < A.length; i++) {
+            for (int j = 0; j < A[i].length; j++) {
+                for (int j2 = 0; j2 < A[i][j].length; j2++) {
+                    System.out.print(A[i][j][j2]+" ");
+                }
+                System.out.println();
+            }
+        }
+    }
+}
 
