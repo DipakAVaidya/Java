@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class cuboid {
+
+    public static void main(String[] args) {
+        int Lenght,Breadth,hieght;
+        int TotalArea , volume;
+
+        Scanner sc=new Scanner (System.in);
+
+        System.out.println("Enter Values of cuboid Height Breadth And Length: ");
+
+        Lenght = sc.nextInt();
+        Breadth = sc.nextInt();
+        hieght = sc.nextInt();
+
+        volume = Lenght*Breadth*hieght;
+        System.out.println("The Volume of Cuboid is: "+volume);
+
+
+        TotalArea = 2*(Lenght*hieght+Breadth*hieght+Lenght*Breadth);
+        System.out.println("Total Area Of Cuboid is:  "+ TotalArea);
+
+        
+        
+    }
+    
+}
