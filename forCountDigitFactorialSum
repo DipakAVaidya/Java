@@ -1,0 +1,68 @@
+import java.util.Scanner;
+
+public class ForChalleng {
+    public static void main(String[] args) { 
+
+        // Display Digits of No Right to Left :
+        // Count Digits in Number 
+        Scanner sc = new Scanner(System.in);
+        System.out.println("\n Enter a Digit");
+        int n = sc.nextInt();
+        int count = 0;
+        while (n > 0) {
+            int r = n % 10;
+            n = n / 10;
+            count ++;
+
+            System.out.println(r);
+
+        }
+        System.out.println("\nTotal digits in no is :  "+count);
+    }  
+}
+
+
+// 
+import java.util.Scanner;
+
+import javax.swing.plaf.synth.SynthPasswordFieldUI;
+
+public class ForChallenge {
+    public static void main(String[] args) {
+      Scanner sc=new Scanner (System.in);
+      System.out.println("Enter a No you want to perfrom:");
+      int n = sc.nextInt();
+      /*int temp = n; 
+      for (int i = 2; i <= 11; i++) {
+        System.out.println(n);
+        n = i*temp;
+      }*/
+
+      for (int i = 1; i <= 10; i++) {
+        System.out.println(n+" X "+i+" = "+n*i);
+
+      }
+
+
+      //Find Sum Of n Number
+      System.out.println("\n Enter a Number you Want to sum");
+      int m = sc.nextInt();
+      int sum = 0;
+      for (int i = 1; i<=m; i++) {
+        sum = sum+i;
+        
+       }
+      System.out.println("Sum of  "+m+"  numbers is: "+sum);
+
+
+      // Factorial of Number
+      System.out.println("\n Enter a Number you Want to Factorial");
+      int c = sc.nextInt();
+      int fact = 1;
+      for (int i = 1; i <= c; i++) {
+        fact = fact*i;
+      }
+      System.out.println("Factorial of "+c+" Numbers is: "+fact);
+     
+    }
+}
