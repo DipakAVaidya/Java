@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class FIndRadix {
+    public static void main(String[] args) {
+        String num;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter any String Value");
+        num = sc.next();
+
+        if (num.matches("[01]+")) {
+            System.out.println("This is a Binary Radix = 2");
+        } else if (num.matches("[0-7]+")) {
+            System.out.println("This is a Octal Radix = 8");
+
+        } else if (num.matches("[0-9]+")) {
+            System.out.println("This is a Decimal Radix = 10");
+        } else if (num.matches("[A-F0-9]+")) {
+            System.out.println("This is a Hexadecimal Radix = 16 ");
+
+        }
+
+        else {
+            System.out.println("this is Not a any Number System");
+        }
+        
+        
+
+  // Leap Year or Not
+        int year;
+        System.out.println("Enter a Year:");
+        year = sc.nextInt();
+
+        if (year % 4 == 0) {
+            if (year % 100 ==0) {
+               if (year % 400 ==0) {
+                System.out.println("its Leap Year");
+               } 
+               else{
+                System.out.println("Not a Leap Year");
+               }
+            }
+            else{
+                System.out.println("Its Leap Year");
+            }
+        }
+        else{
+            System.out.println("Not a Leap Year");
+        }
+            
+
+    }
+
+}
