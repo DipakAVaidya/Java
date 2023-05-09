@@ -1,0 +1,58 @@
+
+
+public class StringChallenge {
+    public static void main(String[] args) {
+        String str = "programer@gmail.com";
+
+       /* System.out.println(str.substring(0, 9)+"\nThis is Username\n");
+        System.out.println(str.substring(10, 19)+"\nThis is a domain name\n");
+        System.out.println("Does it Valid Domain Name:");
+        System.out.println(str.matches(".*@gmail.*"));
+        
+
+        int i = str.indexOf("@");
+        String uname = str.substring(0,i);
+        String domain = str.substring(i+1,str.length());
+        System.out.println("Username:  "+uname+"\nDomain name:  "+domain);
+
+        System.out.println(domain.startsWith("gmail"));
+
+        int j = domain.indexOf(".");
+        String name = domain.substring(0, j);
+        System.out.println(name.equals("gmail"));
+        */
+
+        //given no  Binary or not
+        int a = 101011;
+        String st = String.valueOf(a);
+        System.out.println(st.matches("[01]+"));
+
+      
+       // System.out.println("Number is HexadecimalOr not");
+
+       String s = "0B123R";
+        System.out.println(s.matches("[0-9A-Z]+"));
+    
+       // Date Formate dd/mm/yyy
+
+       String d = "03/12/1999";
+       System.out.println(d.matches("[0-3][0-9]/[01][0-9]/[0-9]{4}"));
+
+       //Remove Special character from String;
+       String sc = "A!B#C%D@12";
+       System.out.println(sc.replaceAll("[^A-Za-z0-9]"," "));
+
+      // Remove Extra Spaces from string
+       String sp = " abc        sec     dev ";
+       System.out.println(sp.replaceAll("\\s+", " ").trim());
+
+       // FInd number of Words in String:
+       String snw = "  abc        sec     dev ";
+        snw = snw.replaceAll("\\s+", " ").trim() ;
+       String Words[] =snw.split("\\s");
+       System.out.println(Words.length); 
+       
+
+
+    }
+}
