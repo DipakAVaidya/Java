@@ -1,0 +1,48 @@
+public class Bitwise {
+    public static void main(String[] args) {
+
+        int x = 0b1010; 
+        int y = 0b0110; 
+        int z;
+       // z = x&y
+        z = x|y;
+        // z= x ^ y;
+        System.out.println(z);
+
+        int a = -0b0101;
+       // int b = a >> 1;
+       // int b = a >> 2 ;
+          int b = a >>> 1;
+        
+          System.out.println(String.format("%s",Integer.toBinaryString(a)));
+        System.out.println(String.format("%32s",Integer.toBinaryString(b)));
+       
+        
+    }
+}
+
+// Swapping Two Value
+
+public class BitwiseAssign {
+    public static void main(String[] args) {
+        int  a = 9, b = 12;
+        System.out.println("Before Swaping  Value " +a + "  " +b );
+        a=a^b;
+        System.out.println(a);
+        b=a^b;
+        System.out.println(b);
+        a = a^b;
+        System.out.println("Swapping Values: "+a + " " + b);
+
+        byte x = 9, y = 12;
+        byte z;
+        z = (byte)(x<<4);
+        z = (byte)(x|y);
+        System.err.println();
+        System.out.println((z&0b11110000)>>4);
+        System.out.println(z&0b00001111);
+
+
+    }
+}
+
