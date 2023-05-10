@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class WebsiteProto {
+    public static void main(String[] args) {
+        String url;
+        Scanner sc=new Scanner (System.in);
+        System.out.println("Enter a URL");
+        url = sc.next();
+
+        int i = url.indexOf(":");
+        String Protocol = url.substring(0, i);
+        System.out.println("\n"+Protocol);
+
+        if (Protocol.equals("https")) {
+            System.out.println("Its A Hyper Text Trasfer Protocol: ");
+        }
+        else if (Protocol.equals("ftp")) {
+            System.out.println("Its A File Transfer Protocol: ");
+        }
+        else  {
+            System.out.println("Invalid Protocol Type: ");
+        }
+
+        int j = url.lastIndexOf(".");
+        String domain = url.substring(j+1 ,url.length());
+        System.out.println("\nDomain Name: "+ domain);
+
+        if (domain.equals("com")) {
+            System.out.println("Its Commercial Domain Name: ");
+        }
+        else if (domain.equals("net")) {
+            System.out.println("Its  Network  Domain Name: ");
+        }
+        else if (domain.equals("org")) {
+            System.out.println("Its  Orgnization  Domain Name: ");
+        }
+        else if (domain.equals("in")) {
+            System.out.println("Its  indian  Domain Name: ");
+        }
+        else{
+            System.out.println("Not Valid Domain Name: ");
+        }
+
+
+
+
+    }
+}
